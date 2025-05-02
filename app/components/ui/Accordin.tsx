@@ -2,8 +2,8 @@
 
 import * as React from "react";
 import * as AccordionPrimitive from "@radix-ui/react-accordion";
-import {cn} from "@/app/utils/util";
 import {ArrowRightIcon} from "@/app/assets/svgs/ArrowRight";
+import {cn} from "@/app/utils/util";
 
 const Accordion = AccordionPrimitive.Root;
 
@@ -27,7 +27,7 @@ const AccordionTrigger = React.forwardRef<
     <AccordionPrimitive.Trigger
       ref={ref}
       className={cn(
-        "flex flex-1 gap-3 items-center group justify-between py-4 font-medium  text-base md:text-[20px] lg:text-2xl transition-all text-left [&[data-state=open]>div]:bg-gradient-to-r [&[data-state=open]>div]:text-primary-white from-[#1a1533] via-80% to-[#4CC3C7] ",
+        "flex flex-1 gap-3 items-center group justify-between py-4 text-base md:text-xl font-medium transition-all text-left [&[data-state=open]>div]:bg-gradient-to-r [&[data-state=open]>div]:text-primary-white from-gradient via-80% to-[#4CC3C7] ",
         className
       )}
       {...props}
@@ -50,7 +50,7 @@ const AccordionContent = React.forwardRef<
     className="overflow-hidden text-xs md:text-lg text-secondary-black data-[state=closed]:animate-accordion-up data-[state=open]:animate-accordion-down"
     {...props}
   >
-    <div className={cn("pt-4", className)}>{children}</div>
+    <div className={cn("pt-2", className)}>{children}</div>
   </AccordionPrimitive.Content>
 ));
 AccordionContent.displayName = AccordionPrimitive.Content.displayName;
