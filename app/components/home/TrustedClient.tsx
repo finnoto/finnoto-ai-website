@@ -75,10 +75,15 @@ const clients = [
     logo: "/images/home/traya-logo.png",
     hoverLogo: "/images/home/traya-logo.png",
   },
+  // {
+  //   name: "Happay",
+  //   logo: "/images/home/happay-logo.png",
+  //   hoverLogo: "/images/home/happay-logo-colored.png",
+  // },
   {
-    name: "Happay",
-    logo: "/images/home/happay-logo.png",
-    hoverLogo: "/images/home/happay-logo-colored.png",
+    name: "Onsurity",
+    logo: "/images/home/onsurity-logo-colored.png",
+    hoverLogo: "/images/home/onsurity-logo.png",
   },
   {
     name: "Spinny",
